@@ -1,7 +1,9 @@
 body{
     padding-top:0px;
+    background-color: #ffffff;
     overflow-x: hidden;
-    font-family: "font-regular";
+    font-family: "body";
+    color:var(--textprimary)
 }
 
 .container-fluid{
@@ -98,65 +100,6 @@ body{
     background-size:cover;
     
 }
-/*remove button outline and shadow*/
-button:focus {
-    outline: 0px dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-}
-
-/*button general styling*/
-.btn{
-    background-color:transparent;
-    border-radius:20px;
-    padding: 7px 25px 7px 25px;
-    font-size: 12px;
-    letter-spacing: 3px;
-    transition:all 0.9s;
-    position:relative;
-}
-
-.btn:hover{
-    border-radius: 20px;
-}
-
-.btn::before,
-.btn::after {
-    border-radius: 20px;
-    background: #000;
-    content: '';
-    position: absolute;
-    z-index: -1;
-
-}
-
-
-/*dark button hover*/
-.btn-outline-dark{
-    overflow: hidden;
-    border-color: #444;   
-}
-
-.btn-outline-dark::after{
-    height:100%;
-    left:-35%;
-    top:0;
-    transform:skew(45deg);
-    transition-duration:0.5s;
-    transform-origin:top left;
-    width:0; 
-
-}
-
-.btn-outline-dark:hover:after{
-    height:100%;
-    width:135%;
-}
-.btn-outline-dark:focus{
-    box-shadow: none;
-    outline: 0px dotted;
-    outline: 0px auto -webkit-focus-ring-color;
-}
-
 
 /* stroke */
 nav.stroke ul li a,
@@ -228,13 +171,6 @@ nav.stroke ul li a:hover:after {
     cursor: pointer; 
 }
 
-.social-icon{
-    text-align: center;
-    position: relative;
-    height:40px;
-
-}
-
 
 
 
@@ -287,7 +223,9 @@ nav.stroke ul li a:hover:after {
 
 
 .description{
-    margin: 30px 10% 7% 10%;
+    margin-top:40px !important;
+    margin-bottom: 64px !important;
+
 }
 
 .des-item{
@@ -307,20 +245,23 @@ nav.stroke ul li a:hover:after {
 .strip{
     padding-top:6%;
     padding-bottom: 5%;
-    margin-bottom:13%;
-
 
 }
 
 
 .strip-simple{
-    margin-bottom: 13%;
+    margin-bottom: 0%;
 }
 
 
 .paragraph{
-    padding:16px 25% 16px 25%;
-    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top:16px;
+    padding-bottom: 16px;
+    margin: auto;
+    max-width:760px;
 }
 
 .paragraph-simple{
@@ -346,6 +287,7 @@ nav.stroke ul li a:hover:after {
 }
 .artifact-medium{
     text-align: center;
+    margin-top: 20px;
     padding-left:15%;
     padding-right: 15%;
 }
@@ -378,8 +320,15 @@ nav.stroke ul li a:hover:after {
 .highlight{
     height:550px;
     text-align: center;
+    padding:32px 0px 32px 0px;
+}
 
-
+.imgwrapper{
+    display: flex;
+    padding:32px;
+    background-color: #F0F3FE;
+    justify-content: center;
+   
 }
 .purple{
     background-color:#695FED;
@@ -521,7 +470,7 @@ img{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    height:95px;
+    height:64px;
 
 
 }
@@ -571,6 +520,14 @@ img{
 /*-XLarge Screen-*/
 @media only screen and (min-width: 992px) {
 
+    .paragraph{
+        max-width:1200px;
+        padding-left: auto !important;
+        padding-right: auto !important;
+
+        
+           
+    }
     #overlay {
         display:none;
         background-color:white;
@@ -581,18 +538,20 @@ img{
 /*-Large Screen-*/
 @media only screen and (max-width: 992px) {
     .paragraph{
-        padding-left: 10% !important;
-        padding-right: 10% !important;
-        margin-bottom: 5%;   
+        max-width:1200px;
+        padding-left: auto !important;
+        padding-right: auto !important;
+        margin-bottom: 5%;
+        
+           
     }
 
 
     .navbar{
         padding:20px 60px 20px 40px;   
     }
-    .social-icon{
-        text-align: center;
-    }  
+
+    
     .copyright{
         text-align: center;
     }
@@ -602,6 +561,7 @@ img{
 /*-TABLETS-*/
 @media only screen and (max-width: 768px) {
     .paragraph{
+
         padding-left: 10% !important;
         padding-right: 10% !important;
         margin-bottom: 5%;   
@@ -611,9 +571,9 @@ img{
         display: none;
 
     }
-    .description{
+    /* .description{
         flex-direction: column-reverse;
-    }
+    } */
 
 
     .paragraph{
