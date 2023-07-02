@@ -81,7 +81,7 @@ h1{
 /**Section Title**/
 h2{
     font-family: "MuseoSlab-Regular" !important;
-    font-size:26px;
+    font-size:28px;
     line-height: 1.6 ;
     color:var(--textprimary);
     margin-bottom: 25px;
@@ -91,7 +91,7 @@ h2{
 h3{
     vertical-align: middle;
     font-family:'Mont-Regular';
-    font-size:18px;
+    font-size:20px;
     font-weight: 500;
     line-height: 1.5 ;
     color:var(--textprimary);

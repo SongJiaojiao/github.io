@@ -86,7 +86,13 @@ body{
 }
 
 
+.interop{
 
+    background-image: url('../img/Trading/splash.png');
+    background-position: center;
+    background-size:cover;
+
+}
 .credit{
     background-image: url('../img/credit/splash.png');
     background-position: center;
@@ -315,7 +321,9 @@ nav.stroke ul li a:hover:after {
 
 
 
-
+.dropshadow1{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 
 .highlight{
     height:550px;
@@ -326,8 +334,9 @@ nav.stroke ul li a:hover:after {
 .imgwrapper{
     display: flex;
     padding:32px;
-    background-color: #F0F3FE;
+    background-color:#EDF1FC;
     justify-content: center;
+    border-radius: 12px;
    
 }
 .purple{
