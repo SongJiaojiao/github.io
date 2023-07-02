@@ -14,7 +14,7 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" style="width:24px"href="img/favicon.png">
+    <link rel="shortcut icon" style="width:24px" href="img/favicon.png">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -35,19 +35,23 @@
         integrity="sha256-6HSLgn6Ao3PKc5ci8rwZfb//5QUu3ge2/Sw9KfLuvr8=" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="./js/jquery.js" type="text/javascript"></script>
-  
+
 
 
 
 </head>
 
 <body class="home">
+    <div id="loading"></div>
+
+    
     <div class="header">
-        <button type="button" class="btn btn-lightmode" onclick="window.location.href='./page/about.html'">Resume<div class="btn-icon"></div></button> 
+        <button type="button" class="btn btn-lightmode" onclick="window.location.href='./page/about.html'">Resume<div
+                class="btn-icon"></div></button>
     </div>
-    <div class="tagline">
-        <div><img style="width: 280px;margin-top: -24px;"src="./img/homepage/profile.svg"></div>
-        <div class="tagline-right"> 
+    <div class="tagline" data-aos="fade-up">
+        <div><img style="width: 280px;margin-top: -24px;" src="./img/homepage/profile.svg"></div>
+        <div class="tagline-right">
             <h2 style="color:var(--primary)">Hi, this is Jiaojiao. I design products that</h2>
             <div class="slideupSection">
                 <div class="slide-texts">
@@ -56,108 +60,102 @@
                         <span><img src="./img/homepage/Shape.png"></img>complex ideas</span>
                         <span><img src="./img/homepage/Inspire.png"></img>innovations</span>
                     </p>
-                
-                </div>
-              
-            </div>
-    
-            <h2 style="color:var(--primary); ">Currently designing trading tools <div class="link">@Goldman Sachs</div></h2>
-    </div>
 
-        
-    
+                </div>
+
+            </div>
+
+            <h2 style="color:var(--primary); ">Currently designing trading tools <div class="link">@Goldman Sachs</div>
+            </h2>
+        </div>
+
 
     </div>
 
 
     <div class="container-fluid add-next">
 
-            <div class="card-parent" style="background-color: var(--purple)" onclick="window.location.href='/interop.html'">
-                <div class="card-leftChild">
-                    <div class="card-title">
-                        <h1>Marquee Trading</h1>
-                        <br>
-                        <p class="body-large">Make every second count in rapid markets. </p>
-                    </div>
-         
-                    <!-- <div class="card-action">
-                        <button type="button" class="btn btn-lightmode" onclick="sendEmail();">Request Case Study<div class="btn-icon"></div></button> 
-                    </div> -->
-                   
-
-   
+        <div class="card-parent" style="background-color: var(--purple)" onclick="window.location.href='/interop.html'">
+            <div class="card-leftChild">
+                <div class="card-title">
+                    <h1>Marquee Trading</h1>
+                    <br>
+                    <p class="body-large">Make every second count in rapid markets. </p>
                 </div>
-                <div class="card-rightChild">
-                    <div class="horizontalOval"></div>
-                    <div class="card-img"><img src="./img/homepage/Marquee.png"></div>
-                  
-                </div>
-                
+            </div>
+            <div class="card-rightChild">
+                <div class="horizontalOval"></div>
+                <div class="card-img"><img src="./img/homepage/Marquee.png"></div>
 
             </div>
 
-            <div class="card-parent" style="background-color: var(--wasabi);" onclick="window.location.href='./page/credit.html'">
-                <div class="card-leftChild">
-                    <div class="card-title">
-                        <h1>Reinvent Lending</h1>
-                        <br>
-                        <p class="body-large">Close more loans at ease. </p>
-                    </div>
-                    
 
-                    
+        </div>
+
+        <div class="card-parent" style="background-color: var(--wasabi);"
+            onclick="window.location.href='./page/credit.html'">
+            <div class="card-leftChild">
+                <div class="card-title">
+                    <h1>Reinvent Lending</h1>
+                    <br>
+                    <p class="body-large">Close more loans at ease. </p>
                 </div>
-                <div class="card-rightChild">
-                    <div class="circle"></div>
-                    <div class="card-img"><img src="./img/homepage/credit2.png"></div>
-    
-                </div>
-                
+
+
 
             </div>
-            <div class="card-parent" style="background-color: var(--babyblue)" onclick="window.location.href='./page/capstone.html'">
-                <div class="card-leftChild">
-                    <div class="card-title">
-                        <h1>Student Dashboard</h1>
-                        <br>
-                        <p class="body-large">Transform student data into visual stories.</p>
-                    </div>
-                    
-                </div>
-                <div class="card-rightChild">
-                    <div class="diamond"></div>
-                    <div class="card-img" style="border-radius: 24px;"><img class="dropshadow" style="border-radius: 12px;width:70%;" src="./img/homepage/capstone.gif"></div>
-    
-                </div>
-                
+            <div class="card-rightChild">
+                <div class="circle"></div>
+                <div class="card-img"><img src="./img/homepage/credit2.png"></div>
 
             </div>
-            <!-- <div> As a product designer, I find joy in crafting simple and elegant solutions to empower people. Coming from a blend of
+
+
+        </div>
+        <div class="card-parent" style="background-color: var(--babyblue)"
+            onclick="window.location.href='./page/capstone.html'">
+            <div class="card-leftChild">
+                <div class="card-title">
+                    <h1>Student Dashboard</h1>
+                    <br>
+                    <p class="body-large">Transform student data into visual stories.</p>
+                </div>
+
+            </div>
+            <div class="card-rightChild">
+                <div class="diamond"></div>
+                <div class="card-img" style="border-radius: 24px;"><img class="dropshadow"
+                        style="border-radius: 12px;width:70%;" src="./img/homepage/capstone.gif"></div>
+
+            </div>
+
+
+        </div>
+        <!-- <div> As a product designer, I find joy in crafting simple and elegant solutions to empower people. Coming from a blend of
                 technical and design background, my analytical mindset allows me to examine the underlying
                     problems and establish patterns in complex environments. Past experiences have also brought me
                     expertise in the world of FinTech, EdTech, Data Visualizations and so many others.  
             </div> -->
 
+        <script src="./js/animateText.js" type="text/javascript"></script>
+        <script src="./js/animateButton.js" type="text/javascript"></script>
+        <script>
+            function hideLoader() {
+                $('#loading').hide();
+            }
 
-         
-
-            <script src="./js/animateText.js" type="text/javascript"></script>
-            <script src="./js/animateButton.js" type="text/javascript"></script>
+            $(window).ready(hideLoader);
+        </script>
 
 
-            <footer class="page-footer">
-            </footer>
-            <script>
-                feather.replace()
-              </script>
+        <footer class="page-footer">
+        </footer>
+        <script>
+            feather.replace()
+        </script>
 
-          
+
 
 </body>
 
 </html>
-
-
-
-
-
