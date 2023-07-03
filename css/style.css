@@ -18,24 +18,34 @@ body{
 
 .home{
     background-color: var(--base00);
-    padding:64px 8% 32px 8%; 
+    padding:64px 8% 32px 8% !important; 
     /* display: flex; 
     flex-direction:column;  */
-    align-items: center;
-    justify-content: center;
+    align-items: center !important;
+    justify-content: center !important;
     max-width: 1400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    
 }
 
-#loading {
+.content{
+ padding: 0;
+ margin:0;
+}
+
+.loading {
     background: url('/img/homepage/loading.gif') no-repeat center center;
-    position: absolute;
+    background-color: #fff;
+    background-size: 180px;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 9999999;
+    background-color: var(--base00);
+
 }
 
 .header{

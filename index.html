@@ -40,10 +40,8 @@
 
 
 </head>
-
-<body class="home">
-    <div id="loading"></div>
-
+<div class="loading"></div>
+<body class="content home">
     
     <div class="header">
         <button type="button" class="btn btn-lightmode" onclick="window.location.href='./page/about.html'">Resume<div
@@ -60,21 +58,15 @@
                         <span><img src="./img/homepage/Shape.png"></img>complex ideas</span>
                         <span><img src="./img/homepage/Inspire.png"></img>innovations</span>
                     </p>
-
                 </div>
-
             </div>
-
             <h2 style="color:var(--primary); ">Currently designing trading tools <div class="link">@Goldman Sachs</div>
             </h2>
         </div>
-
-
     </div>
 
 
     <div class="container-fluid add-next">
-
         <div class="card-parent" style="background-color: var(--purple)" onclick="window.location.href='/interop.html'">
             <div class="card-leftChild">
                 <div class="card-title">
@@ -88,8 +80,6 @@
                 <div class="card-img"><img src="./img/homepage/Marquee.png"></div>
 
             </div>
-
-
         </div>
 
         <div class="card-parent" style="background-color: var(--wasabi);"
@@ -138,21 +128,14 @@
             </div> -->
 
         <script src="./js/animateText.js" type="text/javascript"></script>
-        <script src="./js/animateButton.js" type="text/javascript"></script>
-        <script>
-            function hideLoader() {
-                $('#loading').hide();
-            }
 
-            $(window).ready(hideLoader);
-        </script>
+        <script src="./js/loading.js" type="text/javascript"></script>
 
 
         <footer class="page-footer">
         </footer>
-        <script>
-            feather.replace()
-        </script>
+
+
 
 
 
