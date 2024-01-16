@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'body';
-    src: url('font/Mont-Book.ttf')format('truetype');
+    src: url('font/VremenaGroteskBook.otf')format('truetype');
     font-style: normal;
     font-weight: 200;
 }
@@ -35,10 +35,21 @@
 
 
 @font-face {
-    font-family: "gallery";
-    src: url('font/GalleryModern.otf')format('truetype');
+    font-family: "VremenaGroteskBook";
+    src: url('font/VremenaGroteskBook.otf'truetype');
 }
 
+@font-face {
+    font-family: "VremenaGroteskMedium";
+    src: url('font/VremenaGroteskMedium.otf')format('truetype');
+}
+
+@font-face {
+    font-family: "VremenaGroteskRegular";
+    src: url('font/VremenaGroteskRegular.otf')format('truetype');
+}
+ 
+ 
 @font-face {
     font-family: "Grotesk";
     src: url('font/');
@@ -56,9 +67,10 @@ body{
 
 .btn{
     font-family: "body";
-    font-family: "MuseoSlab-Regular";
+    font-family: "VremenaGroteskBook";
     font-size: 18px;
     letter-spacing: 1px;
+    padding-top: 2px;
 }
 
 .gallery{
@@ -69,28 +81,28 @@ body{
 
 /**Page Title**/
 h1{
-    font-family: 'MuseoSlab-Regular' !important;
-    font-size:34px;
+    font-family: 'VremenaGrotesk' !important;
+    font-size:28px;
     line-height: 1.3; 
     color:var(--textprimary);
     letter-spacing: 1px;
-    margin: 0 !important;
+    margin-bottom: 12px;
    
 }
 
 /**Section Title**/
 h2{
-    font-family: "MuseoSlab-Regular" !important;
+    font-family: "VremenaGroteskBook" !important;
     font-size:28px;
     line-height: 1.6 ;
     color:var(--textprimary);
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 /**Sub Section Title**/
 h3{
     vertical-align: middle;
-    font-family:'Mont-Regular';
+    font-family:'VremenaGrotesk';
     font-size:20px;
     font-weight: 500;
     line-height: 1.5 ;
@@ -100,7 +112,7 @@ h3{
 }
 /**Description Title**/
 h4{
-    font-family:'Mont-Semibold';
+    font-family:'VremenaGrotesk';
     font-size:16px;
     font-weight: 400;
     line-height: 1.5;
@@ -111,14 +123,14 @@ h4{
 
 .display1{
     font-size: 56px;
-    font-family: 'MuseoSlab-Regular';
+    font-family: 'VremenaGrotesk';
     color:#1B0B49;
 }
 
 .display2{
     font-size: 40px;
     /* color: #444444; */
-    font-family: 'MuseoSlab-Regular';
+    font-family: 'VremenaGrotesk';
     line-height: 1.5;
     letter-spacing: 1px;
     color:#1B0B49;
@@ -134,13 +146,13 @@ h4{
 }
 .resume-title{
     font-size: 18px;
-    font-family: 'MuseoSlab-Regular';
+    font-family: 'VremenaGrotesk';
     margin-bottom: 16px !important;
 }
 
 .resume-content{
     font-size: 16px;
-    font-family: 'MuseoSlab-Regular';
+    font-family: 'VremenaGroteskBook';
     margin-bottom: 16px !important;
 
 }
@@ -170,6 +182,8 @@ h4{
     line-height: 1.5;
     color:var(--textprimary);
 }
+
+input, textarea, select { font-family:inherit; }
 
 
 
