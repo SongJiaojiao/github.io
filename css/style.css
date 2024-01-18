@@ -93,8 +93,6 @@ body{
     margin-left:auto;
     margin-right:auto;
     
-    
-
   
     /* align-items: left;
     justify-self: center; */
@@ -256,6 +254,7 @@ button:focus {
     transition: all 0.3s;
     flex: 1 1 0;
     width: 0;
+    min-width: 400px;
 
 
     
@@ -349,12 +348,18 @@ button:focus {
 }
 
 .horizontalOval{
+    background-image: url(../img/homepage/dumbell.png);
+    background-size: 100% 100%;
     transition: all 0.5s;
     position: absolute;
-    width:96%;
-    height:60%;
-    background-color:var(--primary);
-    border-radius: 240px;
+    width:100%;
+    height:100%;
+    /* background-color:var(--primary); */
+    /* border-radius: 240px;
+    background-repeat:no-repeat; */
+    background-size: 90% 90%; 
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 
 .verticalOval{
@@ -373,7 +378,7 @@ button:focus {
     background-size: 100% 100%;
     position: absolute;
     width:100%;
-    height: 100%;
+    height: 110%;
     transition: all 0.5s;
     background-repeat:no-repeat;
     background-size: 80% 80%;
@@ -604,6 +609,7 @@ img{
 
 
 @media only screen and (min-width: 992px) {
+
   #overlay {
     display:none;
     background-color:white;
@@ -612,6 +618,13 @@ img{
 }
 @media only screen and (max-width: 992px) {
  
+    .card-parent{
+        width: 100%;
+    }
+    .tagline{
+            flex-direction: column;
+        }
+     
 .navbar{
     padding:20px 30px 20px 40px;   
 }
@@ -627,9 +640,12 @@ img{
         float: center;
 }
 
-
+}
 
 @media only screen and (max-width: 768px) {
+    .card-row{
+        flex-direction: column;
+    }
     .card-project-left{
         padding: 0;
     }
@@ -647,6 +663,7 @@ img{
     }
 
     .card-parent{
+        flex: 0 1 auto;
         height: 45vh;
     }
 
@@ -660,6 +677,9 @@ img{
 
 
 @media only screen and (max-width: 576px) {
+    .card-row{
+        flex-direction: column;
+    }
     
 
     .thumbnail-img{
@@ -688,6 +708,7 @@ img{
     }
     .card-parent{
         height: 50vh;
+        flex: 0 1 auto;
     }
   
 }
