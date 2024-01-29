@@ -136,6 +136,14 @@ h4{
     color:#1B0B49;
 
 }
+.display3{
+    font-size: 32px;
+    color:var(--primary);
+    /* color: #444444; */
+    font-family: 'VremenaGrotesk';
+    line-height: 1.5;
+
+}
 
 .caption{
     font-family: 'body', sans-serif;

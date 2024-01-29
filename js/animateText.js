@@ -1,8 +1,8 @@
 const txts=document.querySelector(".animate-next").children;
             txtsLen=txts.length;
             let index = 0;
-            const textInTimer=3000,
-                textOutTimer=2800;
+            const textInTimer=2500,
+                textOutTimer=2500;
             function animateText(){
                 for(let i=0;i<txtsLen;i++){
                     txts[i].classList.remove('text-in','text-out')
@@ -24,7 +24,7 @@ const txts=document.querySelector(".animate-next").children;
                     index++;
                 }
                 
-                setTimeout(animateText,3000)
+                setTimeout(animateText,1000)
         
 
             }
