@@ -104,7 +104,6 @@ button:focus {
     background-color:rgb(0,0,0,0.05);
     border-radius:32px;
     padding: 16px 24px 14px 24px !important;
-    transition:all 0.9s;
     position:relative;
     color: var(--primary);
     text-align: center;
@@ -233,7 +232,7 @@ button:focus {
     display: flex;
     flex-direction: column;
     border-radius: 32px;
-    padding: 16px 48px 40px 48px;
+    padding: 16px;
     margin-bottom: 32px; 
     gap: 0px;
     justify-content:space-between;
@@ -302,7 +301,7 @@ button:focus {
 }
 
 .card-topChild{
-    width: 70%;
+    width: 60%;
     position: relative;
     display: flex;
     align-items: center;
@@ -311,10 +310,15 @@ button:focus {
     margin-left: auto;
     margin-right: auto;
     aspect-ratio: 1;
+    margin-bottom: 16px;
 
 }
 
-
+.card-botChild{
+    background-color: #ffffff;
+    border-radius: 32px;
+    padding: 8px 32px 8px 32px;
+}
 .card-rightChild{
     width: 50%;
     position: relative;
