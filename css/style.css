@@ -241,11 +241,21 @@ button:focus {
     flex: 1 1 0;
     width: 0;
     min-width: 400px;
-
-
     
 }
 
+.inlineLink{
+    background-color: #F5F3E8;
+    color:#333;
+    padding: 0px 2px 0px 2px;
+    
+}
+
+.inlineLink:hover{
+    color:#B0B419;
+    text-decoration: none;
+    cursor: pointer;
+}
 .card-parent:hover{
     cursor: pointer;
     transform: scale(1.02);
