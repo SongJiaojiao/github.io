@@ -93,6 +93,12 @@ body{
     background-size:cover;
 
 }
+
+.search{
+    background-image: url('../img/Search/Splash.png');
+    background-position: center;
+    background-size:cover;
+}
 .credit{
     background-image: url('../img/credit/credit2.png');
     background-position: center;
