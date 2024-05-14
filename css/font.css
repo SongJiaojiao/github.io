@@ -1,6 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=IBM+Plex+Sans:wght@200;300;400&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=IBM+Plex+Sans:wght@200;300;400&family=Sanchez&display2=swap');
 
 
 @font-face {
@@ -120,13 +120,13 @@ h4{
 }
 
 
-.display1{
+.display21{
     font-size: 56px;
     font-family: 'VremenaGrotesk';
     color:#1B0B49;
 }
 
-.display2{
+.display22{
     font-size: 32px;
     /* color: #444444; */
     font-family: 'VremenaGrotesk';
@@ -135,7 +135,7 @@ h4{
     color:#1B0B49;
 
 }
-.display3{
+.display23{
     font-size: 32px;
     color:var(--primary);
     /* color: #444444; */
@@ -284,7 +284,7 @@ p-description{
 
 .link{
     /* font-family: 'Mont-regular'; */
-    display: inline-block;
+    display2: inline-block;
     
 }
 
@@ -368,13 +368,13 @@ p-description{
 }
 
 .navbar-vertical li{
-    display:none;
+    display2:none;
 }
 
 
 .navbar-vertical li a{
     color: #999999;
-    display:block;
+    display2:block;
 }
 
 .navbar-vertical li a:hover, .navbar-vertical li.active a {

@@ -89,7 +89,7 @@ $(document).ready(function(){
     
      $('.modal').on('hidden.bs.modal', function(){
         $(this).find('#project1Passcode').val('').end();
-        $(this).find("#validation").css("display", "none");
+        $(this).find("#validation").css("display2", "none");
     });
     
     
@@ -128,7 +128,7 @@ function checkPasscode(userinput,crtproject){
     }
 
     else {
-        $("#validation").css("display", "block");        
+        $("#validation").css("display2", "block");        
         } 
 }
 
@@ -138,11 +138,11 @@ function checkPasscode(userinput,crtproject){
 //move overlay
 function checkSize(){
     //if screen > 992
-    if ($("#overlay").css("display") == "none" ){
+    if ($("#overlay").css("display2") == "none" ){
         $(".hamburger").removeClass("is-active");
     }
     //if screen <= 992
-    if ($("#overlay").css("display") == "block" && !$(".hamburger").hasClass("is-active") ){
+    if ($("#overlay").css("display2") == "block" && !$(".hamburger").hasClass("is-active") ){
         $("#overlay").hide();
         $(".navbar-vertical li").hide();
     }

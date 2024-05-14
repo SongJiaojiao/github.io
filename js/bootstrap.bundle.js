@@ -3992,14 +3992,14 @@
       flip: true,
       boundary: 'scrollParent',
       reference: 'toggle',
-      display: 'dynamic'
+      display2: 'dynamic'
     };
     var DefaultType = {
       offset: '(number|string|function)',
       flip: 'boolean',
       boundary: '(string|element)',
       reference: '(string|element)',
-      display: 'string'
+      display2: 'string'
       /**
        * ------------------------------------------------------------------------
        * Class Definition
@@ -4196,11 +4196,11 @@
             preventOverflow: {
               boundariesElement: this._config.boundary
             }
-          } // Disable Popper.js if we have a static display
+          } // Disable Popper.js if we have a static display2
 
         };
 
-        if (this._config.display === 'static') {
+        if (this._config.display2 === 'static') {
           popperConfig.modifiers.applyStyle = {
             enabled: false
           };
@@ -4618,7 +4618,7 @@
           document.body.appendChild(this._element);
         }
 
-        this._element.style.display = 'block';
+        this._element.style.display2 = 'block';
 
         this._element.removeAttribute('aria-hidden');
 
@@ -4697,7 +4697,7 @@
       _proto._hideModal = function _hideModal() {
         var _this7 = this;
 
-        this._element.style.display = 'none';
+        this._element.style.display2 = 'none';
 
         this._element.setAttribute('aria-hidden', true);
 
@@ -5173,7 +5173,7 @@
       _proto.show = function show() {
         var _this = this;
 
-        if ($$$1(this.element).css('display') === 'none') {
+        if ($$$1(this.element).css('display2') === 'none') {
           throw new Error('Please use show on visible elements');
         }
 

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "my-portfolio",
+			"path": "../my-portfolio"
+		},
+		{
+			"name": "playground",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

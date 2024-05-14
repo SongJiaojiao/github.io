@@ -20,7 +20,7 @@ body{
 .home{
     background-color: var(--base00);
     padding:64px 8% 32px 8% !important; 
-    /* display: flex; 
+    /* display2: flex; 
     flex-direction:column;  */
     align-items: center !important;
     justify-content: center !important;
@@ -130,7 +130,6 @@ button:focus {
 .btn-lightmode{
     overflow: hidden;
     border: none;
-  
     
 }
 .btn-lightmode:hover{
@@ -146,6 +145,26 @@ button:focus {
     background-image: url('/img/homepage/arrow-back-white.svg');
 
 }
+.btn-lightmode::after{
+    color: white;
+    height:100%;
+    left:-42%;
+    top:0px;
+    transform:skew(45deg);
+    transition-duration:0.5s;
+    transform-origin:top right;
+    width:0;   
+}
+
+.btn-lightmode:hover .img{
+    fill:white;
+}
+.btn-lightmode:hover::after{
+    
+    height:100%;
+    width:145%;
+}
+
 .btn-icon{
     margin-left: 8px;
     display: inline-block;
@@ -199,25 +218,6 @@ button:focus {
     mask: url('/img/homepage/arrow.svg') no-repeat center;
 }
 
-.btn-lightmode::after{
-    color: white;
-    height:100%;
-    left:-42%;
-    top:0px;
-    transform:skew(45deg);
-    transition-duration:0.5s;
-    transform-origin:top right;
-    width:0;   
-}
-
-.btn-lightmode:hover .img{
-    fill:white;
-}
-.btn-lightmode:hover:after{
-    
-    height:100%;
-    width:145%;
-}
 
 
 .card-row{
