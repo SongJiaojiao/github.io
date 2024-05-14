@@ -120,13 +120,13 @@ h4{
 }
 
 
-.display21{
+.display1{
     font-size: 56px;
     font-family: 'VremenaGrotesk';
     color:#1B0B49;
 }
 
-.display22{
+.display2{
     font-size: 32px;
     /* color: #444444; */
     font-family: 'VremenaGrotesk';
@@ -135,7 +135,7 @@ h4{
     color:#1B0B49;
 
 }
-.display23{
+.display3{
     font-size: 32px;
     color:var(--primary);
     /* color: #444444; */
@@ -284,7 +284,7 @@ p-description{
 
 .link{
     /* font-family: 'Mont-regular'; */
-    display2: inline-block;
+    : inline-block;
     
 }
 
@@ -368,13 +368,13 @@ p-description{
 }
 
 .navbar-vertical li{
-    display2:none;
+    display:none;
 }
 
 
 .navbar-vertical li a{
     color: #999999;
-    display2:block;
+    display:block;
 }
 
 .navbar-vertical li a:hover, .navbar-vertical li.active a {
